@@ -1,0 +1,39 @@
+[bg_new name="background" storage="HowToGame7-1"]
+[bg_new name="background2" storage="HowToGame7-2"]
+[bg_new name="background3" storage="HowToGame7-3"]
+[bg_new name="background4" storage="HowToGame7-4"]
+[bg_new name="background5" storage="HowToGame7-5"]
+;メッセージ表示
+[showmessage]
+[call file=wide/system target="*system_setting_buttons"]
+[text_new name=_sp_chara_name layer=ui x="-168" y=-108.5 val="" color="DDFF00" fontsize=16 anchor="MiddleLeft"]
+[text_show name="_sp_chara_name"] 
+
+
+การซักผ้านั้นไม่ใช่เรื่องยากเลย[p]
+[bg_show name="background"]
+
+คล้ายๆกับซักรองเท้านั่นแหละ[p]
+[bg_hide name = "background"]
+[bg_show name="background2"]
+ขั้นแรกเหมือนกันเป๊ะ[p]
+[bg_hide name = "background3"]
+[bg_show name="background4"]
+แล้วก็ขัดๆถูๆ[r]
+
+เปลี่ยนน้ำสักหน่อย[p]
+
+และที่ขาดไม่ได้คือ...[p]
+[bg_hide name = "background4"]
+[bg_show name="background5"]
+น้ำยาปรับผ้านุ่ม[r]
+จะทำให้ผ้ามีกลิ่นหอมมากขึ้น[p]
+
+ไงล่ะ ง่ายใช่ไหม[p]
+
+มาเริ่มกันเลยดีกว่า[p]
+
+
+[scene file = "Wash"]
+
+

@@ -1,0 +1,21 @@
+@call file=wide/libs/utils
+[bg_new name="background" storage="Black"]
+[bg_show name="background"]
+
+;メッセージ表示
+[showmessage]
+[call file=wide/system target="*system_setting_buttons"]
+[text_new name=_sp_chara_name layer=ui x="-168" y=-108.5 val="" color="DDFF00" fontsize=16 anchor="MiddleLeft"]
+[text_show name="_sp_chara_name"] 
+
+
+ทำการติดตั้งคอมพิวเตอร์[r]
+โดยการเสีบสายต่างๆให้ถูกช่อง[p]
+
+ถ้าหากว่าถูกต้อง[r]
+คอมพิวเตอร์จะมีปฏิกิริยาตอบสนอง[p]
+
+
+[scene file = "PCCase"]
+
+

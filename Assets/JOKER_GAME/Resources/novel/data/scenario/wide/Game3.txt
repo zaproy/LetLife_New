@@ -1,0 +1,37 @@
+
+[bg_new name="background" storage="HowToGame3"]
+[bg_new name="background2" storage="HowToGame3-1"]
+[bg_new name="background3" storage="HowToGame3-2"]
+[showmessage]
+
+[call file=wide/system target="*system_setting_buttons"]
+[text_new name=_sp_chara_name layer=ui x="-168" y=-108.5 val="" color="DDFF00" fontsize=16 anchor="MiddleLeft"]
+[text_show name="_sp_chara_name"] 
+
+การกวาดห้อง[p]
+
+[bg_show name="background"]
+
+การกวาดห้องที่ถูกวิธีนั้นจะต้องกวาดขยะไปในทิศทางเดียวกัน[p]
+
+[bg_hide name = "background"]
+[bg_show name="background2"]
+
+คลิกเพื่อเพิ่มกำลังในการกวาด[p]
+
+[bg_hide name = "background2"]
+[bg_show name="background3"]
+
+เมื่อปล่อยนิ้วออก ไม้กวาดจะกวาดออกไป[r]
+กำลังในการกวาดจะเพิ่มขึ้นตามระยะเวลาที่กด[p]
+แต่อย่าลืมว่ามีเวลาจำกัด[p]
+
+อ้อ!! เกือบลืม[p]
+
+ยิ่งขยะที่กวาดใหญ่เท่าไหร่ก็ต้องกดนานขึ้นเท่านั้น[p]
+ทำความสะอาดให้สนุกนะ!!![p]
+
+
+[scene file = "Bloom"]
+
+

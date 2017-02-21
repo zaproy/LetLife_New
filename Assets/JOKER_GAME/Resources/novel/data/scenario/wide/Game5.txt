@@ -1,0 +1,38 @@
+[bg_new name="background" storage="HowToGame5-1"]
+[bg_new name="background2" storage="HowToGame5-2"]
+
+
+[showmessage]
+[call file=wide/system target="*system_setting_buttons"]
+[text_new name=_sp_chara_name layer=ui x="-168" y=-108.5 val="" color="DDFF00" fontsize=16 anchor="MiddleLeft"]
+[text_show name="_sp_chara_name"] 
+
+
+ดึกๆแบบนี้คงจะต้องเป็นบะหมี่กึ่งสำเร็จรูป[r]
+แต่จริงๆแล้วก็ไม่แนะนำหรอกนะ[p]
+
+[bg_show name="background"]
+
+การปรุงนั้นง่ายมาก[p]
+
+ขอแค่เป็นอะไรที่กินได้ก็ลากลงหม้อ[r]
+แล้วรอบะหมี่สุกแค่สามนาทีก็จะได้บะหมี่รสเลิศ[r]
+นี่แหละสเน่ห์ของบะหมี่กึ่งสำเร็จรูป[p]
+
+แต่ดึกๆแบบนี้ก็ทำให้เบลอๆได้เหมือนกัน...[p]
+
+[bg_hide name = "background"]
+[bg_show name="background2"]
+
+เอ๊ะ!![p]
+
+ใครเอากรรไกรใส่ลงไปในหม้อ !?![p]
+
+เอามันออกไปเดี๋ยวนี้เลย[p]
+
+
+
+
+[scene file = "Cook"]
+
+

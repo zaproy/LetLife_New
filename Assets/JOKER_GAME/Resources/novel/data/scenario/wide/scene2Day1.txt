@@ -1,0 +1,30 @@
+@call file=wide/libs/utils
+[bg_new name="background" storage="black"]
+[bg_show name="background"]
+
+;メッセージ表示
+[showmessage]
+[call file=wide/system target="*system_setting_buttons"]
+[text_new name=_sp_chara_name layer=ui x="-168" y=-108.5 val="" color="DDFF00" fontsize=16 anchor="MiddleLeft"]
+[text_show name="_sp_chara_name"] 
+
+
+
+
+[playbgm wait=false time=1 storage="music"]
+
+#รุ่นพี่
+
+ตึ้ง ตึ้ง ตึง ตึ้ง[p]
+
+ขอให้น้องๆปี 1 คณะ ไอซีที ทุกคน [r]
+มารวมกันที่ลานกิจกรรมในเวลา 14.00 [r]
+เพื่อทำกิจกรรมรับน้องด้วยค่ะ[p]
+
+ขอให้น้องๆปี 1 คณะ ไอซีที ทุกคน [r]
+มารวมกันที่ลานกิจกรรมในเวลา 14.00 [r]
+เพื่อทำกิจกรรมรับน้องด้วยค่ะ[p]
+
+[scene file = "Isometric"]
+
+

@@ -1,0 +1,51 @@
+[bg_new name="background" storage="HowToGame6-1"]
+[bg_new name="background2" storage="HowToGame6-2"]
+[bg_new name="background3" storage="HowToGame6-3"]
+[bg_new name="background4" storage="HowToGame6-4"]
+[bg_new name="background5" storage="HowToGame6-5"]
+
+;メッセージ表示
+[showmessage]
+[call file=wide/system target="*system_setting_buttons"]
+[text_new name=_sp_chara_name layer=ui x="-168" y=-108.5 val="" color="DDFF00" fontsize=16 anchor="MiddleLeft"]
+[text_show name="_sp_chara_name"] 
+
+
+เมื่อทำกิจกรรมอย่างเต็มที่ก็อย่าลืมที่จะต้องดูแลรักษา..[p]
+
+[bg_show name="background"]
+
+รองเท้า[p]
+
+การทำความสะอาดรองเท้าให้ใหม่เอี่ยมน่ะ[r]
+ไม่ยากเย็นเลย[r]
+
+เหมือนกันกับตอนทำเลอะนั่นแหละ[p]
+
+[bg_hide name = "background"]
+[bg_show name="background2"]
+
+ขั้นแรกก็น้ำน้ำยาซักผ้ามาทาคราบสกปรก[p]
+[bg_hide name = "background2"]
+[bg_show name="background3"]
+แช่น้ำสักนิด แล้วนำมาขัดจนกว่าคราบจะหลุด[p]
+[bg_hide name = "background3"]
+[bg_show name="background4"]
+จากนั้นก็ต้องปล่อยให้เป็นหน้าที่ของน้ำในการล้างคราบ[r]
+
+ถ้าทาน้ำยาซักผ้าทิ้งไว้สัก 15 นาทีก็จะขัดง่ายขึ้นนะ[r]
+
+พอล้างน้ำเสร็จก็เทน้ำออกหน่อย[p]
+
+และสิ่งที่จะทำให้รองเท้าคู่เก่งขาววิ้งเหมือนใหม่ คือ . . .[p]
+[bg_hide name = "background4"]
+[bg_show name="background5"]
+กระดาษทิชชู แปะให้เยอะๆเลย[p]
+
+เท่านี้รองเท้าคู่เก่งก็จะดูใหม่เสมอแล้ว[p]
+
+
+
+[scene file = "Shoe"]
+
+

@@ -1,0 +1,32 @@
+@call file=wide/libs/utils
+[bg_new name="background" storage="HowToGame1"]
+[bg_new name="background2" storage="HowToGame1-1"]
+[bg_new name="background3" storage="HowToGame1-2"]
+[bg_show name="background"]
+
+;メッセージ表示
+[showmessage]
+[call file=wide/system target="*system_setting_buttons"]
+[text_new name=_sp_chara_name layer=ui x="-168" y=-108.5 val="" color="DDFF00" fontsize=16 anchor="MiddleLeft"]
+[text_show name="_sp_chara_name"] 
+
+
+ต่อไปจะเป็นการเก็บของ[p]
+
+วัตถุที่ตกลงมาสามารถลากได้[p]
+
+[bg_hide name = "background"]
+[bg_show name="background2"]
+
+คลิกเพื่อหมุนวัตถุไปทางซ้าย[p]
+
+[bg_hide name = "background2"]
+[bg_show name="background3"]
+
+ลากวัตถุไปยังจุดที่กำหนดไว้[p]
+
+ขอใหสนุกกับการจัดของ[p]
+
+[scene file = "Engine"]
+
+

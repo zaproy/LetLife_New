@@ -1,0 +1,41 @@
+@call file=wide/libs/utils
+[bg_new name="background" storage="4-1"]
+[bg_show name="background"]
+
+;メッセージ表示
+[showmessage]
+[call file=wide/system target="*system_setting_buttons"]
+[text_new name=_sp_chara_name layer=ui x="-168" y=-108.5 val="" color="DDFF00" fontsize=16 anchor="MiddleLeft"]
+[text_show name="_sp_chara_name"] 
+
+
+;---------------キャラ定義
+
+@tag_default tag="Cial"
+[chara_new name="Cial" storage="Cial02" jname="รุ่นพี่" scale=1 jcolor=FF77FF]
+@reset_tag_default
+
+@chara_pos name="Cial" x=0 y=0
+
+@show name=Cial
+
+#Cial
+สวัสดีเฟรชชี่ทุกคนนะคะ พี่เป็นตัวแทนปี 2 [r]
+ที่จะขอกล่าวตอนรับน้องๆ ปี 1 ทุกคนนะ [p]
+
+วันนี้เราจะมีกิจกรรมสันทนาการให้ทุกคน[r]
+ได้มันทำความรู้จักกับเพื่อนใหม่กัน [p]
+
+โดยกติกามีอยู่ว่า พี่จะให้เวลา 30 นาที [r]
+ให้จับกลุ่มให้ได้ 4 คนแล้วทำความรู้จักเพื่อน[r]
+ให้ได้เยอะที่สุด[p] 
+
+หมดเวลา พี่จะสุ่มถามรายคนเดี่ยวกับ[r]
+เพื่อนในกลุ่มนะ ใครตอบไม่ได้โดยทำโทษ !!![p]
+
+อ้าวววววว เริ่มได้ [p]
+
+
+
+@jump file=wide/scene5Day1 scene=new
+

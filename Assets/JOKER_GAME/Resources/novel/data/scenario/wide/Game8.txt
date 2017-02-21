@@ -1,0 +1,33 @@
+[bg_new name="background" storage="HowToGame8-1"]
+[bg_new name="background2" storage="HowToGame8-2"]
+[bg_new name="background3" storage="HowToGame8-3"]
+[bg_new name="background4" storage="HowToGame8-4"]
+[bg_new name="background5" storage="HowToGame8-5"]
+;メッセージ表示
+[showmessage]
+[call file=wide/system target="*system_setting_buttons"]
+[text_new name=_sp_chara_name layer=ui x="-168" y=-108.5 val="" color="DDFF00" fontsize=16 anchor="MiddleLeft"]
+[text_show name="_sp_chara_name"] 
+
+
+[bg_show name="background"]
+การพับผ้านั้นง่ายแสนง่าย[p]
+[bg_hide name = "background"]
+[bg_show name="background2"]
+แค่สไลด์หน้าจอในส่วนที่ต้องการจะพับ[p]
+[bg_hide name = "background2"]
+[bg_show name="background3"]
+ง่ายใช่ไหมล่ะ[p]
+[bg_hide name = "backgroun3"]
+[bg_show name="background4"]
+แต่...[p]
+[bg_hide name = "background4"]
+[bg_show name="background5"]
+เสื้อผ้าแต่ละแบบก็พับไม่เหมือนกันนะ[p]
+
+อย่าลืมซะล่ะ[p]
+
+
+[scene file = "Fold"]
+
+

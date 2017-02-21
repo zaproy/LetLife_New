@@ -1,0 +1,50 @@
+[bg_new name="background" storage="HowToGame4-1"]
+[bg_new name="background2" storage="HowToGame4-2"]
+[bg_new name="background3" storage="HowToGame4-3"]
+[bg_new name="background4" storage="HowToGame4-4"]
+[bg_new name="background5" storage="HowToGame4-5"]
+[bg_new name="background6" storage="HowToGame4-6"]
+[bg_new name="background7" storage="HowToGame4-7"]
+[showmessage]
+
+[call file=wide/system target="*system_setting_buttons"]
+[text_new name=_sp_chara_name layer=ui x="-168" y=-108.5 val="" color="DDFF00" fontsize=16 anchor="MiddleLeft"]
+[text_show name="_sp_chara_name"] 
+
+การถูห้อง[p]
+
+[bg_show name="background"]
+
+เช่นเดียวกับการกวาดพื้น[r]
+การถูพื้นที่ถูกวิธีนั้นจะต้องถูไปในทิศทางเดียวกัน[p]
+
+ดังนี้[p]
+[bg_hide name = "background2"]
+[bg_show name="background3"]
+[bg_hide name = "background3"]
+[bg_show name="background4"]
+[bg_hide name = "background4"]
+[bg_show name="background5"]
+เราถูพื้นเพื่อไม่ให้มีฝุ่นละอองบนพื้น[r]
+ดังนั้นไม้ถูของเราจะสกปรกขึ้น ถ้าถูต่อไปต้องสกปรกกว่าเดิมแน่ๆ[p]
+
+[bg_hide name = "background5"]
+[bg_show name="background6"]
+
+เราจะต้องล้างไม้โดยการนำไปจุ่มในถังน้ำสะอาด[r]
+ไม่ถูพื้นของเราก็จะกลับมาใช้ได้เหมือนเดิม[p]
+
+[bg_hide name = "background6"]
+[bg_show name="background7"]
+
+ในบางที่จะมีสิ่งสกปรกติดอยู่[r]
+เราจะต้องถูคราบย้ำๆเพื่อทำความสะอาด[r]
+และอย่าลืมทำความสะอาดไม่ถูพื้นนะ[p]
+
+ถูเพลินเกินไปก็ไม่ดีเหมือนกัน[p]
+
+เรามาเริ่มกันเลยดีกว่า!!![p]
+
+[scene file = "Mob"]
+
+

@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetLife", "Assembly-CSharp.csproj", "{F5285084-750F-A29F-CB67-3999A9DD347D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetLife", "Assembly-CSharp-Editor.csproj", "{C86747DD-4922-A0EF-408C-973EDBBA06E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5285084-750F-A29F-CB67-3999A9DD347D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5285084-750F-A29F-CB67-3999A9DD347D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5285084-750F-A29F-CB67-3999A9DD347D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5285084-750F-A29F-CB67-3999A9DD347D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C86747DD-4922-A0EF-408C-973EDBBA06E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C86747DD-4922-A0EF-408C-973EDBBA06E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C86747DD-4922-A0EF-408C-973EDBBA06E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C86747DD-4922-A0EF-408C-973EDBBA06E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

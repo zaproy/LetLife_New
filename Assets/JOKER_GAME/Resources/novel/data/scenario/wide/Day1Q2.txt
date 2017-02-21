@@ -1,0 +1,23 @@
+@call file=wide/libs/utils
+[bg_new name="background" storage="4"]
+[bg_show name="background"]
+
+;メッセージ表示
+[showmessage]
+[call file=wide/system target="*system_setting_buttons"]
+[text_new name=_sp_chara_name layer=ui x="-168" y=-108.5 val="" color="DDFF00" fontsize=16 anchor="MiddleLeft"]
+[text_show name="_sp_chara_name"] 
+
+
+;---------------キャラ定義
+
+@tag_default tag="chara"
+[chara_new name="yuko" storage="chara" jname="ゆうこ" scale=2 jcolor=FF77FF]
+[chara_new name="mai" storage="kiri" jname="麻衣" scale=2 jcolor=22FFFF]
+@reset_tag_default
+
+คำถามสอง[p]
+
+@jump file=wide/Day1Q3 scene=new
+
+
