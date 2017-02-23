@@ -179,6 +179,7 @@
      <Compile Include="Assets\MiniGame\Script\Drag.cs" />
      <Compile Include="Assets\MiniGame\Script\DragDrop.cs" />
      <Compile Include="Assets\MiniGame\Script\FoldCloth.cs" />
+     <Compile Include="Assets\MiniGame\Script\OnSwipe.cs" />
      <Compile Include="Assets\MiniGame\Script\Plug.cs" />
      <Compile Include="Assets\MiniGame\Script\PresentScript.cs" />
      <Compile Include="Assets\MiniGame\Script\RuleNTime.cs" />
@@ -186,6 +187,8 @@
      <Compile Include="Assets\MiniGame\Script\ShirtWash.cs" />
      <Compile Include="Assets\MiniGame\Script\TrashNDirty.cs" />
      <Compile Include="Assets\MiniGame\Script\WashEq.cs" />
+     <Compile Include="Assets\MiniGame\Script\Wash_new\ToWashMachine.cs" />
+     <Compile Include="Assets\MiniGame\Script\Wash_new\WashNew.cs" />
      <Compile Include="Assets\Status\Script\ButtonControl.cs" />
      <Compile Include="Assets\Status\Script\EventSystem.cs" />
      <Compile Include="Assets\Status\Script\FBLogIn.cs" />
