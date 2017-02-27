@@ -187,6 +187,7 @@
      <Compile Include="Assets\MiniGame\Script\ShirtWash.cs" />
      <Compile Include="Assets\MiniGame\Script\TrashNDirty.cs" />
      <Compile Include="Assets\MiniGame\Script\WashEq.cs" />
+     <Compile Include="Assets\MiniGame\Script\Wash_new\ShirtToWash.cs" />
      <Compile Include="Assets\MiniGame\Script\Wash_new\ToWashMachine.cs" />
      <Compile Include="Assets\MiniGame\Script\Wash_new\WashNew.cs" />
      <Compile Include="Assets\Status\Script\ButtonControl.cs" />
