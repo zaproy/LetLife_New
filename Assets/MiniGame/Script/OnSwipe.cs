@@ -19,9 +19,12 @@ public class OnSwipe : MonoBehaviour {
 	void Update(){
 		if (swipeDirection == Swipe.Left) {
 			direction = "Left";
-			swipeDirection = Swipe.None;
-		} else {
-			direction = "none";
+
+			if (direction == "Left") {
+
+				swipeDirection = Swipe.None;
+			}
+
 		}
 	}
 
@@ -33,6 +36,7 @@ public class OnSwipe : MonoBehaviour {
 	}
 
 	void OnMouseUp(){
+		
 		secondPress = new Vector2 (Input.mousePosition.x, Input.mousePosition.y);
 		currentSwipe = new Vector2 (secondPress.x - firstPress.x, secondPress.y - firstPress.y);
 
@@ -47,6 +51,5 @@ public class OnSwipe : MonoBehaviour {
 		} else if (currentSwipe.x > 0 && currentSwipe.y > -0.2f && currentSwipe.y < 0.2f) {
 			swipeDirection = Swipe.Right;
 		}
-
 	}
 }

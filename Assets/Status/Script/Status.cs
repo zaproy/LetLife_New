@@ -66,7 +66,6 @@ public class Status : MonoBehaviour {
 
 		if (sceneNum == 5) {
 			if (days == 1) {
-				Day1FPoint ();
 			}
 			LoadAllStatus ();
 			ShowAllStatus ();
@@ -220,44 +219,7 @@ public class Status : MonoBehaviour {
 		PlayerPrefs.GetInt ("CleanScore");
 	}
 
-	public void Day1FPoint (){
-		if (sceneCount == 4) {
-			//punish
-			PlayerPrefs.SetFloat ("PointChar1", 40f);
-			PlayerPrefs.SetFloat ("PointChar2", 50f);
-			PlayerPrefs.SetFloat ("PointChar3", 50f);
-			PlayerPrefs.SetFloat ("PointChar4", 50f);
-		} else if (sceneCount == 10) {
-			//1
-			PlayerPrefs.SetFloat ("PointChar1", 40f);
-			PlayerPrefs.SetFloat ("PointChar2", 50f);
-			PlayerPrefs.SetFloat ("PointChar3", 40f);
-			PlayerPrefs.SetFloat ("PointChar4", 50f);
-		} else if (sceneCount == 11) {
-			//2
-			PlayerPrefs.SetFloat ("PointChar1", 50f);
-			PlayerPrefs.SetFloat ("PointChar2", 40f);
-			PlayerPrefs.SetFloat ("PointChar3", 40f);
-			PlayerPrefs.SetFloat ("PointChar4", 50f);
-		} else if (sceneCount == 12) {
-			//3
-			PlayerPrefs.SetFloat ("PointChar1", 50f);
-			PlayerPrefs.SetFloat ("PointChar2", 50f);
-			PlayerPrefs.SetFloat ("PointChar3", 30f);
-			PlayerPrefs.SetFloat ("PointChar4", 50f);
-		} else if (sceneCount == 13) {
-			//4
-			PlayerPrefs.SetFloat ("PointChar1", 50f);
-			PlayerPrefs.SetFloat ("PointChar2", 50f);
-			PlayerPrefs.SetFloat ("PointChar3", 40f);
-			PlayerPrefs.SetFloat ("PointChar4", 40f);
-		} else if (sceneCount == 14) {
-			PlayerPrefs.SetFloat ("PointChar1", 60f);
-			PlayerPrefs.SetFloat ("PointChar2", 60f);
-			PlayerPrefs.SetFloat ("PointChar3", 60f);
-			PlayerPrefs.SetFloat ("PointChar4", 60f);
-		}
-	}
+
 
 	public void ShowAllStatus(){
 		float ratio0 = PlayerPrefs.GetFloat("PointChar1") / 100;
