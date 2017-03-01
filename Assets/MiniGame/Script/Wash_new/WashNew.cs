@@ -13,7 +13,7 @@ public class WashNew : MonoBehaviour {
 
 
 	void OnMouseDown(){
-		
+		Debug.Log ("Click");
 		hygine.SetActive (true);
 
 	}
