@@ -30,7 +30,7 @@ public class DirtyControl : MonoBehaviour {
 			if (changeNum ) {
 				if (dNum < 23) {
 					dNum++;
-					score9.totalScore += 1;
+					score9.endScore += 1;
 				}
 				changeNum = false;
 

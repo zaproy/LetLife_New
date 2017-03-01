@@ -43,28 +43,28 @@ public class Plug : MonoBehaviour {
 			if (pluged.gameObject.tag == "usb1") {
 				Destroy (GetComponent<Rigidbody2D> ());
 				isInteract2 = false;
-				total.totalScore++;
+				total.endScore++;;
 				transform.position = usbPlug [0].transform.position;
 				usbPlug [0].SetActive (false);
 				plugEffect [0].SetActive(true);
 			} else if (pluged.gameObject.tag == "usb2") {
 				Destroy (GetComponent<Rigidbody2D> ());
 				isInteract2 = false;
-				total.totalScore++;
+				total.endScore++;
 				transform.position = usbPlug [1].transform.position;
 				usbPlug [1].SetActive (false);
 				plugEffect [1].SetActive(true);
 			} else if (pluged.gameObject.tag == "usb3") {
 				Destroy (GetComponent<Rigidbody2D> ());
 				isInteract2 = false;
-				total.totalScore++;
+				total.endScore++;
 				transform.position = usbPlug [2].transform.position;
 				usbPlug [2].SetActive (false);
 				plugEffect [0].SetActive(true);
 			} else if (pluged.gameObject.tag == "usb4") {
 				Destroy (GetComponent<Rigidbody2D> ());
 				isInteract2 = false;
-				total.totalScore++;
+				total.endScore++;
 				transform.position = usbPlug [3].transform.position;
 				usbPlug [3].SetActive (false);
 				plugEffect [1].SetActive(true);
@@ -73,7 +73,7 @@ public class Plug : MonoBehaviour {
 			if (pluged.gameObject.tag == "monitor") {
 				Destroy (GetComponent<Rigidbody2D> ());
 				isInteract2 = false;
-				total.totalScore++;
+				total.endScore++;
 				transform.position = usbPlug [1].transform.position;
 				usbPlug [1].SetActive (false);
 				plugEffect [2].SetActive(true);
@@ -84,7 +84,7 @@ public class Plug : MonoBehaviour {
 			if (pluged.gameObject.tag == "stereo") {
 				Destroy (GetComponent<Rigidbody2D> ());
 				isInteract2 = false;
-				total.totalScore++;
+				total.endScore++;
 				transform.position = usbPlug [0].transform.position;
 				usbPlug [0].SetActive (false);
 			} else if (pluged.gameObject.tag == "stereoW1") {
@@ -96,7 +96,7 @@ public class Plug : MonoBehaviour {
 			if (pluged.gameObject.tag == "lan") {
 				Destroy (GetComponent<Rigidbody2D> ());
 				isInteract2 = false;
-				total.totalScore++;
+				total.endScore++;
 				transform.position = usbPlug [0].transform.position;
 				usbPlug [0].SetActive (false);
 				plugEffect [3].SetActive(true);
@@ -105,7 +105,7 @@ public class Plug : MonoBehaviour {
 			if (pluged.gameObject.tag == "elecPC") {
 				Destroy (GetComponent<Rigidbody2D> ());
 				isInteract2 = false;
-				total.totalScore++;
+				total.endScore++;
 				transform.position = usbPlug [0].transform.position;
 				usbPlug [0].SetActive (false);
 

@@ -81,47 +81,48 @@ public class FoldCloth : MonoBehaviour {
 			clothType = 1;
 			clothes [0].SetActive (false);
 			clothes [1].SetActive (true);
-			//score6.totalScore += 1;
+			
 		}else if (stage == 3) {
 			clothType = 2;
 			clothes [1].SetActive (false);
 			clothes [2].SetActive (true);
-			//score6.totalScore += 1;
+			
 		}else if (stage == 4) {
 			clothType = 3;
 			clothes [2].SetActive (false);
 			clothes [3].SetActive (true);
-			//score6.totalScore += 1;
+			
 		}else if (stage == 5) {
 			clothType = 4;
 			clothes [3].SetActive (false);
 			clothes [4].SetActive (true);
-			//score6.totalScore += 1;
+			
 		}else if (stage == 6) {
 			clothType = 5;
 			clothes [4].SetActive (false);
 			clothes [5].SetActive (true);
-			//score6.totalScore += 1;
+			
 		}else if (stage == 7) {
 			clothType = 6;
 			clothes [5].SetActive (false);
 			clothes [6].SetActive (true);
-			//score6.totalScore += 1;
+			
 		}else if (stage == 8) {
 			clothType = 7;
 			clothes [6].SetActive (false);
 			clothes [7].SetActive (true);
-			//score6.totalScore += 1;
+			
 		}else if (stage == 9) {
 			clothType = 8;
 			clothes [7].SetActive (false);
 			clothes [8].SetActive (true);
-			//score6.totalScore += 1;
+			
 		}else if (stage == 10) {
 			clothType = 9;
 			clothes [8].SetActive (false);
 			clothes [9].SetActive (true);
-			//score6.totalScore += 1;
+			
+			
 		}
 	}
 
@@ -133,14 +134,17 @@ public class FoldCloth : MonoBehaviour {
 				swipeDirection = Swipe.None;
 				clothPart [0].SetActive (false);
 				clear [0] = true;
+				score6.endScore += 1;
 			} else if (swipeDirection == Swipe.Left) {
 				swipeDirection = Swipe.None;
 				clothPart [1].SetActive (false);
 				clear [1] = true;
+				score6.endScore += 1;
 			} else if (swipeDirection == Swipe.Right) {
 				swipeDirection = Swipe.None;
 				clothPart [2].SetActive (false);
 				clear [2] = true;
+				score6.endScore += 1;
 			}
 
 
@@ -151,6 +155,7 @@ public class FoldCloth : MonoBehaviour {
 				clear [2] = true;
 				clear [1] = true;
 				clear [0] = true;
+				score6.endScore += 1;
 			}
 
 		}else if (clothType == 2) {
@@ -158,50 +163,60 @@ public class FoldCloth : MonoBehaviour {
 				swipeDirection = Swipe.None;
 				clothPart [4].SetActive (false);
 				clear [0] = true;
+				score6.endScore += 1;
 			} else if (swipeDirection == Swipe.Down) {
 				swipeDirection = Swipe.None;
 				clothPart [5].SetActive (false);
 				clear [1] = true;
 				clear [2] = true;
+				score6.endScore += 1;
 			} 
 		}else if (clothType == 3) {
 			if (swipeDirection == Swipe.Up) {
 				swipeDirection = Swipe.None;
 				clothPart [6].SetActive (false);
 				clear [0] = true;
+				score6.endScore += 1;
 			} else if (swipeDirection == Swipe.Left) {
 				swipeDirection = Swipe.None;
 				clothPart [7].SetActive (false);
 				clear [1] = true;
+				score6.endScore += 1;
 			} else if (swipeDirection == Swipe.Right) {
 				swipeDirection = Swipe.None;
 				clothPart [8].SetActive (false);
 				clear [2] = true;
+				score6.endScore += 1;
 			}
 		}else if (clothType == 4) {
 			if (swipeDirection == Swipe.Up) {
 				swipeDirection = Swipe.None;
 				clothPart [9].SetActive (false);
 				clear [0] = true;
+				score6.endScore += 1;
 			} else if (swipeDirection == Swipe.Left) {
 				swipeDirection = Swipe.None;
 				clothPart [10].SetActive (false);
 				clear [1] = true;
+				score6.endScore += 1;
 			} else if (swipeDirection == Swipe.Right) {
 				swipeDirection = Swipe.None;
 				clothPart [11].SetActive (false);
 				clear [2] = true;
+				score6.endScore += 1;
 			}
 		}else if (clothType == 5) {
 			if (swipeDirection == Swipe.Right) {
 				swipeDirection = Swipe.None;
 				clothPart [12].SetActive (false);
 				clear [0] = true;
+				score6.endScore += 1;
 			} else if (swipeDirection == Swipe.Up) {
 				swipeDirection = Swipe.None;
 				clothPart [13].SetActive (false);
 				clear [1] = true;
 				clear [2] = true;
+				score6.endScore += 1;
 			} 
 		}else if (clothType == 6) {
 			if (swipeDirection == Swipe.Right) {
@@ -210,6 +225,7 @@ public class FoldCloth : MonoBehaviour {
 				clear [2] = true;
 				clear [1] = true;
 				clear [0] = true;
+				score6.endScore += 1;
 			}
 
 		}else if (clothType == 7) {
@@ -217,36 +233,43 @@ public class FoldCloth : MonoBehaviour {
 				swipeDirection = Swipe.None;
 				clothPart [15].SetActive (false);
 				clear [0] = true;
+				score6.endScore += 1;
 			} else if (swipeDirection == Swipe.Left) {
 				swipeDirection = Swipe.None;
 				clothPart [16].SetActive (false);
 				clear [1] = true;
+				score6.endScore += 1;
 			} else if (swipeDirection == Swipe.Right) {
 				swipeDirection = Swipe.None;
 				clothPart [17].SetActive (false);
 				clear [2] = true;
+				score6.endScore += 1;
 			}
 		}else if (clothType == 8) {
 			if (swipeDirection == Swipe.Right) {
 				swipeDirection = Swipe.None;
 				clothPart [18].SetActive (false);
 				clear [0] = true;
+				score6.endScore += 1;
 			} else if (swipeDirection == Swipe.Up) {
 				swipeDirection = Swipe.None;
 				clothPart [19].SetActive (false);
 				clear [1] = true;
 				clear [2] = true;
+				score6.endScore += 1;
 			} 
 		}else if (clothType == 9) {
 		if (swipeDirection == Swipe.Right) {
 			swipeDirection = Swipe.None;
 			clothPart [20].SetActive (false);
 			clear [0] = true;
+			score6.endScore += 1;
 		} else if (swipeDirection == Swipe.Down) {
 			swipeDirection = Swipe.None;
 			clothPart [21].SetActive (false);
 			clear [1] = true;
 			clear [2] = true;
+			score6.endScore += 1;
 		} 
 	}
 	}

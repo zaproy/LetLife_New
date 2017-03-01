@@ -100,44 +100,46 @@ public class WashEq : MonoBehaviour {
 		if (water.gameObject.tag == "Dirty") {
 			
 				o -= 0.2f;
-				x -= 0.2f;
+			x -= 0.2f;
 			
 		}
 
 		if (water.gameObject.tag == "Water") {
+			time.endScore++;
 			if (isShirt) {
 				o = 1f;
 				x = 1f;
 
 				if (time.timer <= 30) {
-					time.totalScore += 3;
+					time.endScore++;
 				}
 			}
 
 			if (shoe && isWater) {
 				water1.SetActive (false);
 				water2.SetActive (false);
-				time.totalScore++;
+				time.endScore++;
 			}
 		}
 
 		if (water.gameObject.tag == "Softener") {
+			
 			if (isShirt) {
 				o = 1f;
 				x = 0f;
 				if (time.timer <= 30) {
-					time.totalScore += 3;
+					time.endScore++;
 				}
 			}
 		}
 
 		if (water.gameObject.tag == "Paper") {
+			
 			time.totalScore += 1;
 			if (shoe && i < 16) {
-				
 				paper [i].SetActive (true);
 				i++;
-				time.totalScore++;
+				time.endScore++;
 			}
 		}
 	}

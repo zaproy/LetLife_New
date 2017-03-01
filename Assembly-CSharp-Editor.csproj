@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Demigiant\DOTweenPro\Editor\DOTweenAnimationInspector.cs" />
      <Compile Include="Assets\Editor\Exporter.cs" />
      <Compile Include="Assets\Facebook\Editor\FacebookBuild.cs" />
      <Compile Include="Assets\Facebook\Editor\FacebookPostprocess.cs" />
@@ -57,38 +58,70 @@
      <Compile Include="Assets\Facebook\Editor\iOS\PListDict.cs" />
      <Compile Include="Assets\Facebook\Editor\iOS\PListParser.cs" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\libs\utils.txt" />
+     <None Include="Assets\Demigiant\DOTweenPro\readme.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\tall\libs\utils.txt" />
+     <None Include="Assets\ScriptInspector3\CodeSnippets\namespace.txt" />
+     <None Include="Assets\Demigiant\DemiLib\Core\DemiLib.xml" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\Game4.txt" />
+     <None Include="Assets\ScriptInspector3\SI Changes.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\libs\save.txt" />
+     <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
+     <None Include="Assets\ScriptInspector3\CodeSnippets\log.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\title.txt" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\ScriptInspector3\CodeSnippets\case.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\Day1Q2.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\Game8.txt" />
+     <None Include="Assets\ScriptInspector3\CodeSnippets\do.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\Game7.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\scene5Day1.txt" />
+     <None Include="Assets\ScriptInspector3\_readme.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\Example.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\Game6.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\Day1Q1.txt" />
+     <None Include="Assets\ScriptInspector3\CodeSnippets\enum.txt" />
+     <None Include="Assets\ScriptInspector3\CodeSnippets\else.txt" />
+     <None Include="Assets\ScriptInspector3\CodeSnippets\base.txt" />
+     <None Include="Assets\Demigiant\DOTween\DOTween46.xml" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\Game5.txt" />
+     <None Include="Assets\ScriptInspector3\CodeSnippets\get.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\tall\libs\save.txt" />
+     <None Include="Assets\ScriptInspector3\EditorResources\Fonts\SourceCodePro-Legal.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\tall\title.txt" />
+     <None Include="Assets\ScriptInspector3\CodeSnippets\if.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\Game3.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\tall\system.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\Day1Q4.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\scene1Day1.txt" />
+     <None Include="Assets\ScriptInspector3\CodeSnippets\struct.txt" />
+     <None Include="Assets\ScriptInspector3\CodeSnippets\for.txt" />
+     <None Include="Assets\ScriptInspector3\CodeSnippets\catch.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\system.txt" />
+     <None Include="Assets\Demigiant\DOTween\readme.txt" />
+     <None Include="Assets\ScriptInspector3\CodeSnippets\class.txt" />
+     <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\libs\menu.txt" />
+     <None Include="Assets\ScriptInspector3\CodeSnippets\foreach.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\scene4Day1.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\first.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\scene3Day1.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\Day1Game1Tutorial.txt" />
+     <None Include="Assets\ScriptInspector3\CodeSnippets\interface.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\tall\libs\menu.txt" />
      <None Include="Assets\Facebook\Scripts\Canvas\Resources\JSSDKBindings.txt" />
+     <None Include="Assets\ScriptInspector3\CodeSnippets\switch.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\Day1Q3.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\tall\scene1.txt" />
+     <None Include="Assets\Demigiant\DemiLib\Core\Editor\DemiEditor.xml" />
+     <None Include="Assets\ScriptInspector3\CodeSnippets\finally.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\Day1Game2Tutorial.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\config\config.txt" />
+     <None Include="Assets\ScriptInspector3\CodeSnippets\try.txt" />
+     <None Include="Assets\Demigiant\readme_DOTweenPro.txt" />
+     <None Include="Assets\ScriptInspector3\CodeSnippets\while.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\scene2Day1.txt" />
+     <None Include="Assets\ScriptInspector3\CodeSnippets\nn.txt" />
+     <None Include="Assets\ScriptInspector3\CodeSnippets\set.txt" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -151,6 +184,33 @@
  </Reference>
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="DemiLib">
+ <HintPath>E:/UnityProject/LetLife/Assets/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween43">
+ <HintPath>E:/UnityProject/LetLife/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenEditor">
+ <HintPath>E:/UnityProject/LetLife/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween50">
+ <HintPath>E:/UnityProject/LetLife/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenProEditor">
+ <HintPath>E:/UnityProject/LetLife/Assets/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>E:/UnityProject/LetLife/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenPro">
+ <HintPath>E:/UnityProject/LetLife/Assets/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
+ </Reference>
+ <Reference Include="DemiEditor">
+ <HintPath>E:/UnityProject/LetLife/Assets/Demigiant/DemiLib/Core/Editor/DemiEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween46">
+ <HintPath>E:/UnityProject/LetLife/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -80,13 +80,13 @@ public class TrashNDirty : MonoBehaviour {
 		if (clean.gameObject.tag == "Mob") {
 			m -= 0.1f;
 			if (m <= 0f) {
-				score6.totalScore += 2;
+				score6.endScore += 2;
 			}
 		}
 
 		if (clean.gameObject.tag == "Bin") {
 			isBin = true;
-			score6.totalScore += 1;
+			score6.endScore += 1;
 		}
 	}
 

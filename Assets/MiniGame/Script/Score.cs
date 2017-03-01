@@ -21,32 +21,37 @@ public class Score : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D sc){
 		if (book) {
 			if (sc.gameObject.tag == "book") {
-				total.totalScore += 1;
+				AddScore();
 			}
 		} else if (pen) {
 			if (sc.gameObject.tag == "pen") {
-				total.totalScore += 1;
+				AddScore();;
 			}
 		}else if (monitor) {
 			if (sc.gameObject.tag == "monitor") {
-				total.totalScore += 1;
+				AddScore();
 			}
 		}else if (pc) {
 			if (sc.gameObject.tag == "pc") {
-				total.totalScore += 1;
+				AddScore();
 			}
 		}else if (keyboard) {
 			if (sc.gameObject.tag == "keyboard") {
-				total.totalScore += 1;
+				AddScore();
 			}
 		}else if (mouse) {
 			if (sc.gameObject.tag == "mouse") {
-				total.totalScore += 1;
+				AddScore();
 			}
 		}else if (stereo) {
 			if (sc.gameObject.tag == "stereo") {
-				total.totalScore += 1;
+				AddScore();
 			}
 		}
+	}
+	
+	void AddScore(){
+		total.endScore += 1;
+		gameObject.GetComponent<BoxCollider2D>().enabled = false;
 	}
 }

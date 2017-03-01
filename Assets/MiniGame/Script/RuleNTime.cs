@@ -11,8 +11,8 @@ public class RuleNTime : MonoBehaviour {
 	public int Stage;
 
 	public float timer;
-	public float maxTime;
-	public float release;
+	float maxTime;
+	float release;
 	public GameObject[] container;
 	public int objectNum;
 	public GameObject desk2;
@@ -20,62 +20,48 @@ public class RuleNTime : MonoBehaviour {
 
 	public int totalScore;
 	public Text showScore;
+	public int endScore;
+	public Text showEndScore; 
 	public GameObject timeBar;
-
+	
+	public int gameScore;
 	public GameObject[] popUp;
 
 	void Start () {
 		if (Stage == 0) {//set //set kong
 			j = 0;
-			timer = 60f;
-			maxTime = 60f;
 			release = 5f;
-			SetScore ();
-
+			SetTime(60f,60f);
 		} else if(Stage == 1) {//set com
-			
-			timer = 20f;
-			maxTime = 20f;
-			SetScore ();
+			SetTime(20f,20f);
 		} else if(Stage == 2) {//cooking
-
-			timer = 60f;
-			maxTime = 60f;
 			release = 1f;
-			SetScore ();
+			SetTime(60f,60f);
 		}else if(Stage == 3) {//set bloom
-
-			timer = 55f;
-			maxTime = 55f;
-			SetScore ();
+			SetTime(55f,55f);
 		}else if(Stage == 4) { //mob
-
-			timer = 50f;
-			maxTime = 50f;
-			SetScore ();
+			SetTime(50f,50f);
 		}else if(Stage == 5) {//shoe
-
-			timer = 50f;
-			maxTime = 50f;
-			SetScore ();
+			SetTime(50f,50f);
 		}else if(Stage == 6) {//set wash
-
-			timer = 25f;
-			maxTime = 25f;
-			SetScore ();
+			SetTime(25f,25f);
 		}else if(Stage == 7) {//set fold
-
-			timer = 50f;
-			maxTime = 50f;
-			SetScore ();
+			SetTime(50f,50f);
 		}
 
 		startCount = 6f;
 	}
 	
+	void SetTime(float gameTime,float maxgameTime){
+		timer = gameTime;
+		maxTime = maxgameTime;
+		SetTotalScore();
+		
+	}
+	
 	// Update is called once per frame
 	void Update () {
-
+		SetScore();
 		if (startCount <= 0) {
 			startCountText.gameObject.SetActive (false);
 			SetScore ();
@@ -89,9 +75,7 @@ public class RuleNTime : MonoBehaviour {
 			if (Stage == 0) {//set
 				if (timer <= 0) {
 					PlayerPrefs.SetInt ("PlayedGame",1);
-					popUp [0].SetActive (true);
-					popUp [1].SetActive (true);
-					timer = 0;
+					PopUpUI();
 				} else{
 					//Release Object
 					release -= 1 * Time.deltaTime;
@@ -107,17 +91,12 @@ public class RuleNTime : MonoBehaviour {
 			} else if (Stage == 1) {//set
 				if (timer <= 0) {
 					PlayerPrefs.SetInt ("PlayedGame",2);
-
-					popUp [0].SetActive (true);
-					popUp [1].SetActive (true);
-					timer = 0;
+					PopUpUI();
 				}
 			}else if (Stage == 2) {
 				if (timer <= 0) {
 					PlayerPrefs.SetInt ("PlayedGame",3);
-					popUp [0].SetActive (true);
-					popUp [1].SetActive (true);
-					timer = 0;
+					PopUpUI();
 				} else{
 					//Release Object
 					release -= 1 * Time.deltaTime;
@@ -130,43 +109,39 @@ public class RuleNTime : MonoBehaviour {
 			}else if (Stage == 3) {//set
 				if (timer <= 0) {
 					PlayerPrefs.SetInt ("PlayedGame",4);
-					timer = 0;
-					popUp [0].SetActive (true);
-					popUp [1].SetActive (true);
+					PopUpUI();
 				}
 			}else if (Stage == 4) {
 				if (timer <= 0) {
 					PlayerPrefs.SetInt ("PlayedGame",5);
-					popUp [0].SetActive (true);
-					popUp [1].SetActive (true);
-					timer = 0;
+					PopUpUI();
 				}
 			}else if (Stage == 5) {
 				if (timer <= 0) {
 					PlayerPrefs.SetInt ("PlayedGame",6);
-					popUp [0].SetActive (true);
-					popUp [1].SetActive (true);
-					timer = 0;
+					PopUpUI();
 				}
 			}else if (Stage == 6) {
 				if (timer <= 0) {
 					PlayerPrefs.SetInt ("PlayedGame",7);
-					popUp [0].SetActive (true);
-					popUp [1].SetActive (true);
-					timer = 0;
+					PopUpUI();
 				}
 			}else if (Stage == 7) {
 				if (timer <= 0) {
 					PlayerPrefs.SetInt ("PlayedGame",7);
-					popUp [0].SetActive (true);
-					popUp [1].SetActive (true);
-					timer = 0;
+					PopUpUI();
 				}
 			}
 		} else if (startCount > 0) {
 			startCount -= Time.deltaTime;
 			startCountText.text = "" + (int)startCount;
 		}
+	}
+	
+	void PopUpUI(){
+		popUp [0].SetActive (true);
+		popUp [1].SetActive (true);
+		timer = 0;
 	}
 
 	public void PopUpToOther(){
@@ -175,44 +150,50 @@ public class RuleNTime : MonoBehaviour {
 			//test
 			SceneManager.LoadScene("Present", LoadSceneMode.Single);
 		} else  if (Stage == 1){
-			totalScore += PlayerPrefs.GetInt ("CleanScore");
+			endScore += PlayerPrefs.GetInt ("CleanScore");
 			PlayerPrefs.SetInt ("CleanScore", totalScore);
 			//NovelSingleton.StatusManager.callJoker ("wide/scene2Day1", "");
 			SceneManager.LoadScene("Present", LoadSceneMode.Single);
 		} else  if (Stage == 2){
-			totalScore += PlayerPrefs.GetInt ("CleanScore");
+			endScore += PlayerPrefs.GetInt ("CleanScore");
 			PlayerPrefs.SetInt ("CleanScore", totalScore);
 			//NovelSingleton.StatusManager.callJoker ("wide/scene2Day1", "");
 			SceneManager.LoadScene("Present", LoadSceneMode.Single);
 		}else  if (Stage == 3){
-			totalScore += PlayerPrefs.GetInt ("CleanScore");
+			endScore += PlayerPrefs.GetInt ("CleanScore");
 			PlayerPrefs.SetInt ("CleanScore", totalScore);
 			//NovelSingleton.StatusManager.callJoker ("wide/scene2Day1", "");
 			SceneManager.LoadScene("Present", LoadSceneMode.Single);
 		}else  if (Stage == 4){
-			totalScore += PlayerPrefs.GetInt ("CleanScore");
+			endScore += PlayerPrefs.GetInt ("CleanScore");
 			PlayerPrefs.SetInt ("CleanScore", totalScore);
 			//NovelSingleton.StatusManager.callJoker ("wide/scene2Day1", "");
 			SceneManager.LoadScene("Present", LoadSceneMode.Single);
 		}else  if (Stage == 5){
-			totalScore += PlayerPrefs.GetInt ("CleanScore");
+			endScore += PlayerPrefs.GetInt ("CleanScore");
 			PlayerPrefs.SetInt ("CleanScore", totalScore);
 			//NovelSingleton.StatusManager.callJoker ("wide/scene2Day1", "");
 			SceneManager.LoadScene("Present", LoadSceneMode.Single);
 		}else  if (Stage == 6){
-			totalScore += PlayerPrefs.GetInt ("CleanScore");
+			endScore += PlayerPrefs.GetInt ("CleanScore");
 			PlayerPrefs.SetInt ("CleanScore", totalScore);
 			//NovelSingleton.StatusManager.callJoker ("wide/scene2Day1", "");
 			SceneManager.LoadScene("Present", LoadSceneMode.Single);
 		}else  if (Stage == 7){
-			totalScore += PlayerPrefs.GetInt ("CleanScore");
+			endScore += PlayerPrefs.GetInt ("CleanScore") ;
 			PlayerPrefs.SetInt ("CleanScore", totalScore);
 			//NovelSingleton.StatusManager.callJoker ("wide/scene2Day1", "");
 			SceneManager.LoadScene("Present", LoadSceneMode.Single);
 		}
 	} 
+	
+	void SetTotalScore(){
+		
+		
+		showScore.text = "Score : " + gameScore.ToString ();
+	}
 
 	void SetScore(){
-		showScore.text = "Score : " + totalScore.ToString ();
+		showEndScore.text ="Score : " + endScore.ToString ();
 	}
 }

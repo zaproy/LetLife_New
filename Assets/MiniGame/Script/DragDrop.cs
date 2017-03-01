@@ -49,10 +49,10 @@ public class DragDrop : MonoBehaviour {
 		if (putIn.gameObject.tag == "Mor") {
 			if (eat) {
 				inPot = true;
-				score2.totalScore += 1;
+				score2.endScore += 1;
 			} else {
 				inPot = true;
-				score2.totalScore -= 1;
+				score2.endScore -= 1;
 			}
 		}
 
