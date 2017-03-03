@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BloomNMob : MonoBehaviour {
-
+	
+	public AudioSource waterMOb;
+	public ParticleSystem bubble;
 	public bool bin;
 	Vector3 dist1;
 	float posX1;
@@ -64,6 +66,8 @@ public class BloomNMob : MonoBehaviour {
 				dirtyPoint += 1;
 			
 		} else if (mob.gameObject.tag == "Water") {
+			waterMOb.Play();
+			bubble.Play();
 			if (mColor >= 1f) {
 				mColor = 1f;
 			}

@@ -6,7 +6,8 @@ public class Score : MonoBehaviour {
 	//Check Score when objects hit a desk
 	//Must do(Create Another area to check where to place objects)
 	//Attatch to area
-
+	public ParticleSystem clickParticle;
+	public AudioSource clickSound;
 	public int score;
 	public RuleNTime total;
 	//Select Area
@@ -51,6 +52,7 @@ public class Score : MonoBehaviour {
 	}
 	
 	void AddScore(){
+		clickSound.Play();
 		total.endScore += 1;
 		gameObject.GetComponent<BoxCollider2D>().enabled = false;
 	}

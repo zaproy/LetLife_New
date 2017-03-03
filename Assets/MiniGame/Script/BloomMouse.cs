@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BloomMouse : MonoBehaviour {
-
+	
+	public AudioSource bloomSound;
 	public Vector3 dist4;
 	public GameObject bloom;
 	public bool isDown;
@@ -21,6 +22,7 @@ public class BloomMouse : MonoBehaviour {
 		}else if (Input.GetMouseButtonUp (0)) {
 			//bloom.transform.Rotate (0, 0, 0);
 			isDown = false;
+			bloomSound.Play();
 		}
 
 		dist4 = Camera.main.ScreenToWorldPoint (Input.mousePosition);

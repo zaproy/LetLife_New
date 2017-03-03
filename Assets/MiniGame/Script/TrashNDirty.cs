@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TrashNDirty : MonoBehaviour {
-
+	public ParticleSystem dust;
 	public RuleNTime score6;
 	public bool trash;
 	bool isBin;
@@ -18,6 +18,7 @@ public class TrashNDirty : MonoBehaviour {
 	public bool isDirty;
 
 	void Start () {
+		
 		isDirty = true;
 		m = 1f;
 		isBin = false;
@@ -72,6 +73,7 @@ public class TrashNDirty : MonoBehaviour {
 			addSpeed = false;
 			moveT.velocity = transform.right * -speed / mass;
 			StartCoroutine(Stop());
+			dust.Play();
 		}
 	}
 

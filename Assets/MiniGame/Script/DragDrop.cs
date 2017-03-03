@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DragDrop : MonoBehaviour {
-
+	
+	public AudioSource drop;
 	Vector3 dist;
 	float posX;
 	float posY;
@@ -47,6 +48,7 @@ public class DragDrop : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D putIn){
 
 		if (putIn.gameObject.tag == "Mor") {
+			drop.Play();
 			if (eat) {
 				inPot = true;
 				score2.endScore += 1;

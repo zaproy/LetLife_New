@@ -8,7 +8,9 @@ public class FoldCloth : MonoBehaviour {
 	{
 		None,Up,Down,Left,Right
 	};
-
+	
+	public AudioSource fold;
+	public AudioSource pass;
 	public GameObject[] clothPart;
 	public GameObject[] clothes;
 	public int clothType;
@@ -57,6 +59,7 @@ public class FoldCloth : MonoBehaviour {
 	}
 
 	void OnMouseUp(){
+		fold.Play();
 		if (score6.startCount <= 0) {
 			secondPress = new Vector2 (Input.mousePosition.x, Input.mousePosition.y);
 			currentSwipe = new Vector2 (secondPress.x - firstPress.x, secondPress.y - firstPress.y);
@@ -78,46 +81,54 @@ public class FoldCloth : MonoBehaviour {
 	public void StageControl(){
 
 		if (stage == 2) {
+			pass.Play();
 			clothType = 1;
 			clothes [0].SetActive (false);
 			clothes [1].SetActive (true);
 			
 		}else if (stage == 3) {
+			pass.Play();
 			clothType = 2;
 			clothes [1].SetActive (false);
 			clothes [2].SetActive (true);
 			
 		}else if (stage == 4) {
+			pass.Play();
 			clothType = 3;
 			clothes [2].SetActive (false);
 			clothes [3].SetActive (true);
 			
 		}else if (stage == 5) {
+			pass.Play();
 			clothType = 4;
 			clothes [3].SetActive (false);
 			clothes [4].SetActive (true);
 			
 		}else if (stage == 6) {
+			pass.Play();
 			clothType = 5;
 			clothes [4].SetActive (false);
 			clothes [5].SetActive (true);
 			
 		}else if (stage == 7) {
+			pass.Play();
 			clothType = 6;
 			clothes [5].SetActive (false);
 			clothes [6].SetActive (true);
 			
 		}else if (stage == 8) {
+			pass.Play();
 			clothType = 7;
 			clothes [6].SetActive (false);
 			clothes [7].SetActive (true);
 			
-		}else if (stage == 9) {
+		}else if (stage == 9) {pass.Play();
 			clothType = 8;
 			clothes [7].SetActive (false);
 			clothes [8].SetActive (true);
 			
 		}else if (stage == 10) {
+			pass.Play();
 			clothType = 9;
 			clothes [8].SetActive (false);
 			clothes [9].SetActive (true);

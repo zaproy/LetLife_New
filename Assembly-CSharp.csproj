@@ -191,6 +191,7 @@
      <Compile Include="Assets\MiniGame\Script\Wash_new\ShirtToWash.cs" />
      <Compile Include="Assets\MiniGame\Script\Wash_new\ToWashMachine.cs" />
      <Compile Include="Assets\MiniGame\Script\Wash_new\WashNew.cs" />
+     <Compile Include="Assets\PotParticle.cs" />
      <Compile Include="Assets\ScriptInspector3\CodeSnippets\GenerateOverrideMethod.cs" />
      <Compile Include="Assets\ScriptInspector3\CodeSnippets\GeneratePropertyForField.cs" />
      <Compile Include="Assets\ScriptInspector3\CodeSnippets\GenerateUnityMagicMethod.cs" />
@@ -317,29 +318,29 @@
  <Reference Include="UnityEngine.VR">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
+ <Reference Include="DemiLib">
+ <HintPath>E:/UnityProject/LetLife/Assets/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>E:/UnityProject/LetLife/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween43">
+ <HintPath>E:/UnityProject/LetLife/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween46">
+ <HintPath>E:/UnityProject/LetLife/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween50">
+ <HintPath>E:/UnityProject/LetLife/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenPro">
+ <HintPath>E:/UnityProject/LetLife/Assets/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
+ </Reference>
  <Reference Include="LitJson">
  <HintPath>E:/UnityProject/LetLife/Assets/Plugins/JOKER/LitJson.dll</HintPath>
  </Reference>
  <Reference Include="NCalc">
  <HintPath>E:/UnityProject/LetLife/Assets/Plugins/JOKER/NCalc.dll</HintPath>
- </Reference>
- <Reference Include="DemiLib">
- <HintPath>E:/UnityProject/LetLife/Assets/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
- </Reference>
- <Reference Include="DOTween43">
- <HintPath>E:/UnityProject/LetLife/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
- </Reference>
- <Reference Include="DOTween50">
- <HintPath>E:/UnityProject/LetLife/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
- </Reference>
- <Reference Include="DOTween">
- <HintPath>E:/UnityProject/LetLife/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
- </Reference>
- <Reference Include="DOTweenPro">
- <HintPath>E:/UnityProject/LetLife/Assets/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
- </Reference>
- <Reference Include="DOTween46">
- <HintPath>E:/UnityProject/LetLife/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

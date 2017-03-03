@@ -2,7 +2,9 @@
 using System.Collections;
 
 public class Plug : MonoBehaviour {
-
+	public ParticleSystem clickParticle;
+	public AudioSource steroSound;
+	public AudioSource plugedSound;
 	public RuleNTime total;
 
 	public bool usb;
@@ -41,6 +43,8 @@ public class Plug : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D pluged){
 		if (usb) {
 			if (pluged.gameObject.tag == "usb1") {
+				clickParticle.Play();
+				plugedSound.Play();
 				Destroy (GetComponent<Rigidbody2D> ());
 				isInteract2 = false;
 				total.endScore++;;
@@ -48,6 +52,8 @@ public class Plug : MonoBehaviour {
 				usbPlug [0].SetActive (false);
 				plugEffect [0].SetActive(true);
 			} else if (pluged.gameObject.tag == "usb2") {
+				clickParticle.Play();
+				plugedSound.Play();
 				Destroy (GetComponent<Rigidbody2D> ());
 				isInteract2 = false;
 				total.endScore++;
@@ -55,6 +61,8 @@ public class Plug : MonoBehaviour {
 				usbPlug [1].SetActive (false);
 				plugEffect [1].SetActive(true);
 			} else if (pluged.gameObject.tag == "usb3") {
+				clickParticle.Play();
+				plugedSound.Play();
 				Destroy (GetComponent<Rigidbody2D> ());
 				isInteract2 = false;
 				total.endScore++;
@@ -62,6 +70,8 @@ public class Plug : MonoBehaviour {
 				usbPlug [2].SetActive (false);
 				plugEffect [0].SetActive(true);
 			} else if (pluged.gameObject.tag == "usb4") {
+				clickParticle.Play();
+				plugedSound.Play();
 				Destroy (GetComponent<Rigidbody2D> ());
 				isInteract2 = false;
 				total.endScore++;
@@ -71,6 +81,8 @@ public class Plug : MonoBehaviour {
 			}
 		} else if (monitor) {
 			if (pluged.gameObject.tag == "monitor") {
+				clickParticle.Play();
+				plugedSound.Play();
 				Destroy (GetComponent<Rigidbody2D> ());
 				isInteract2 = false;
 				total.endScore++;
@@ -78,22 +90,38 @@ public class Plug : MonoBehaviour {
 				usbPlug [1].SetActive (false);
 				plugEffect [2].SetActive(true);
 			} else if (pluged.gameObject.tag == "monitorW") {
+				plugedSound.Play();
 				transform.position = usbPlug [0].transform.position;
 			}
 		}else if (stereoPlug) {
 			if (pluged.gameObject.tag == "stereo") {
+				clickParticle.Play();
+				steroSound.Play();
+				plugedSound.Play();
 				Destroy (GetComponent<Rigidbody2D> ());
 				isInteract2 = false;
 				total.endScore++;
 				transform.position = usbPlug [0].transform.position;
 				usbPlug [0].SetActive (false);
 			} else if (pluged.gameObject.tag == "stereoW1") {
+				
+				plugedSound.Play();
+				steroSound.Stop();
 				transform.position = usbPlug [1].transform.position;
+				usbPlug [1].SetActive (false);
+				usbPlug [2].SetActive (false);
+				
 			} else if (pluged.gameObject.tag == "stereoW2") {
+				plugedSound.Play();
+				steroSound.Stop();
 				transform.position = usbPlug [2].transform.position;
+				usbPlug [1].SetActive (false);
+				usbPlug [2].SetActive (false);
 			}
 		} else if (lan) {
 			if (pluged.gameObject.tag == "lan") {
+				clickParticle.Play();
+				plugedSound.Play();
 				Destroy (GetComponent<Rigidbody2D> ());
 				isInteract2 = false;
 				total.endScore++;
@@ -102,7 +130,10 @@ public class Plug : MonoBehaviour {
 				plugEffect [3].SetActive(true);
 			}
 		}else if (elecPC) {
+			
 			if (pluged.gameObject.tag == "elecPC") {
+				clickParticle.Play();
+				plugedSound.Play();
 				Destroy (GetComponent<Rigidbody2D> ());
 				isInteract2 = false;
 				total.endScore++;
